@@ -1,53 +1,33 @@
 Multi-Client Chat Application (Java)
-This is a simple multi-client chat application built using Java Sockets and Swing GUI.
 
-💬 Features:
-✅ Multiple users can connect to the server and chat in real-time
-✅ Clean, modern GUI using Java Swing
-✅ Broadcasts messages to all connected clients
-✅ Exit option to leave the chat gracefully
-✅ Option to send image files (.jpg, .jpeg, .png) to other users (basic file transfer)
+This is a simple chat application made with Java where multiple users can join and chat together. It uses Java Sockets for communication and Java Swing for the graphical interface.
 
-⚙️ How it Works:
-First, run the MultiClientChatServer file to start the server on port 5000
+Features:
 
-Multiple users can run the MultiClientChatClient file and join the chat by entering their name
+Multiple users can connect and chat in real-time
 
-Messages sent by any user are broadcasted to all other users
+Simple and clean Swing-based chat window
 
-Users can also send image files which will be displayed as file notifications
+Messages are broadcast to all connected users
 
-🛠️ Technologies Used:
+Users can exit the chat safely
+
+Users can send basic image files (.jpg, .jpeg, .png)
+
+How it works:
+
+Run the MultiClientChatServer file first. This starts the server on port 5000.
+
+Each user runs the MultiClientChatClient file and enters their name to join the chat.
+
+Any message sent by one user is sent to everyone else.
+
+Image files can also be sent, and they appear as file notifications.
+
+Technologies used:
+
 Java Sockets (Networking)
 
 Java Swing (GUI)
 
-Basic File Transfer over Socket Streams
-
-🚀 How to Run:
-Compile the server file:
-
-bash
-Copy
-Edit
-javac MultiClientChatServer.java
-java MultiClientChatServer
-Compile and run the client for each user:
-
-bash
-Copy
-Edit
-javac MultiClientChatClient.java
-java MultiClientChatClient
-📂 Notes:
-The server runs on localhost and port 5000 by default
-
-You can modify the IP/Port in the client code to run over different machines on the same network
-
-Currently, file sending is basic and works for image files only
-
-🎯 Purpose:
-This project is for educational/demo purposes to understand:
-✔ Java Socket Programming
-✔ Multi-threading with multiple clients
-✔ Building GUI-based chat apps in Java
+Basic File Transfer using socket streams
